@@ -1,0 +1,108 @@
+.shopping_cart_product {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+    
+    &-img {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    &-inf {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 1rem;
+
+            & h3 {
+                // width: 16rem;
+                text-transform: uppercase;
+                font-size: medium;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+
+            & svg {
+                width: .7rem;
+                fill: rgb(0, 0, 0);
+
+                &:hover {
+                    fill: rgb(255, 0, 0)
+                }
+            }
+        }
+
+        &-qu {
+            opacity: .7;
+            font-size: small;
+        }
+
+        &-nu {
+            display: flex;
+            justify-content: space-between;
+
+            &-qu {
+                display: flex;
+
+                &-bu {
+                    background: none;
+                    border: 1px rgba(0, 0, 0, 0.2) solid;
+                    width: 30px;
+                    height: 30px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                }
+
+                &-inp {
+                    border: none;
+                    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+                    border-top: 1px rgba(0, 0, 0, 0.2) solid;
+                    width: 45px;
+                    height: 30px;
+                    text-align: center;
+                }
+            }
+
+            &-prices {
+                display: flex;
+                gap: .5rem;
+
+                &-solded {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.scp_sold {
+    .shopping_cart_product {
+        &-inf {
+            &-nu {
+                &-prices {
+                    &-solded {
+                        display: block;
+                    }
+
+                    &-notsolded {
+                        text-decoration: line-through;
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}
