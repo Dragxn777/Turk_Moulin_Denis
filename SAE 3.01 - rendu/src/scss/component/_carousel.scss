@@ -1,0 +1,254 @@
+.carousel {
+    max-width: 32rem;
+
+    &-checkbox {
+        display: none;
+    }
+
+    &-slide {
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-thumbnails {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: .5rem;
+        margin-top: .5rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+#slide-1:checked~.carousel {
+    &-slides {
+        & li:nth-child(1) {
+            display: block;
+        }
+
+        & li:nth-child(2) {
+            display: none;
+        }
+
+        & li:nth-child(3) {
+            display: none;
+        }
+
+        & li:nth-child(4) {
+            display: none;
+        }
+
+        & li:nth-child(5) {
+            display: none;
+        }
+    }
+
+    &-thumbnails {
+        & li:nth-child(1) {
+            opacity: 1;
+        }
+
+        & li:nth-child(2) {
+            opacity: .5;
+        }
+
+        & li:nth-child(3) {
+            opacity: .5;
+        }
+
+        & li:nth-child(4) {
+            opacity: .5;
+        }
+
+        & li:nth-child(5) {
+            opacity: .5;
+        }
+    }
+}
+
+#slide-2:checked~.carousel {
+    &-slides {
+        & li:nth-child(1) {
+            display: none;
+        }
+        
+        & li:nth-child(2) {
+            display: block;
+        }
+
+        & li:nth-child(3) {
+            display: none;
+        }
+
+        & li:nth-child(4) {
+            display: none;
+        }
+
+        & li:nth-child(5) {
+            display: none;
+        }
+    }
+
+    &-thumbnails {
+        & li:nth-child(1) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(2) {
+            opacity: 1;
+        }
+
+        & li:nth-child(3) {
+            opacity: .5;
+        }
+
+        & li:nth-child(4) {
+            opacity: .5;
+        }
+
+        & li:nth-child(5) {
+            opacity: .5;
+        }
+    }
+}
+
+#slide-3:checked~.carousel {
+    &-slides {
+        & li:nth-child(1) {
+            display: none;
+        }
+        
+        & li:nth-child(2) {
+            display: none;
+        }
+        
+        & li:nth-child(3) {
+            display: block;
+        }
+
+        & li:nth-child(4) {
+            display: none;
+        }
+
+        & li:nth-child(5) {
+            display: none;
+        }
+    }
+
+    &-thumbnails {
+        & li:nth-child(1) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(2) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(3) {
+            opacity: 1;
+        }
+
+        & li:nth-child(4) {
+            opacity: .5;
+        }
+
+        & li:nth-child(5) {
+            opacity: .5;
+        }
+    }
+}
+
+#slide-4:checked~.carousel {
+    &-slides {
+        & li:nth-child(1) {
+            display: none;
+        }
+        
+        & li:nth-child(2) {
+            display: none;
+        }
+        
+        & li:nth-child(3) {
+            display: none;
+        }
+        
+        & li:nth-child(4) {
+            display: block;
+        }
+
+        & li:nth-child(5) {
+            display: none;
+        }
+    }
+
+    &-thumbnails {
+        & li:nth-child(1) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(2) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(3) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(4) {
+            opacity: 1;
+        }
+
+        & li:nth-child(5) {
+            opacity: .5;
+        }
+    }
+}
+
+#slide-5:checked~.carousel {
+    &-slides {
+        & li:nth-child(1) {
+            display: none;
+        }
+        
+        & li:nth-child(2) {
+            display: none;
+        }
+        
+        & li:nth-child(3) {
+            display: none;
+        }
+        
+        & li:nth-child(4) {
+            display: none;
+        }
+        
+        & li:nth-child(5) {
+            display: block;
+        }
+    }
+
+    &-thumbnails {
+        & li:nth-child(1) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(2) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(3) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(4) {
+            opacity: .5;
+        }
+        
+        & li:nth-child(5) {
+            opacity: 1;
+        }
+    }
+}

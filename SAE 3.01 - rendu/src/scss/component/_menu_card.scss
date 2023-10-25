@@ -1,0 +1,27 @@
+.menu_card {
+    max-width: 23rem;
+    position: relative;
+
+    &-img {
+        width: 100%;
+    }
+
+    &-title {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: rgb(255, 255, 255);
+        font-size: larger;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        transition: all .5s;
+    }
+
+    &:hover .menu_card {
+        &-title {
+            background-color: rgba(9, 122, 157, 0.7); 
+        }
+    }
+}
